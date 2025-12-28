@@ -137,52 +137,52 @@ export default function ContactPage() {
       <section className="section bg-white">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-primary)] mb-4 font-[var(--font-cormorant)]">
                 Frequently Asked Questions
               </h2>
-              <div className="gold-line mx-auto"></div>
+              <div className="gold-line"></div>
             </div>
 
             <div className="space-y-6">
-              <div className="bg-[var(--color-cream)] rounded-xl p-6">
-                <h3 className="text-lg font-bold text-[var(--color-primary)] mb-2 font-[var(--font-cormorant)]">
+              <div className="bg-[var(--color-cream)] rounded-xl p-8 text-center">
+                <h3 className="text-xl font-bold text-[var(--color-primary)] mb-4 font-[var(--font-cormorant)]">
                   How long does it take to build a website?
                 </h3>
-                <p className="text-[var(--color-text-muted)]">
+                <p className="text-[var(--color-text-muted)] leading-relaxed max-w-xl mx-auto">
                   Most projects take 4-8 weeks from start to finish, depending on 
                   complexity and scope. We&apos;ll provide a detailed timeline 
                   during our initial consultation.
                 </p>
               </div>
 
-              <div className="bg-[var(--color-cream)] rounded-xl p-6">
-                <h3 className="text-lg font-bold text-[var(--color-primary)] mb-2 font-[var(--font-cormorant)]">
+              <div className="bg-[var(--color-cream)] rounded-xl p-8 text-center">
+                <h3 className="text-xl font-bold text-[var(--color-primary)] mb-4 font-[var(--font-cormorant)]">
                   Do you offer payment plans?
                 </h3>
-                <p className="text-[var(--color-text-muted)]">
+                <p className="text-[var(--color-text-muted)] leading-relaxed max-w-xl mx-auto">
                   Yes! We offer flexible payment options. Typically, we require 
                   50% upfront and 50% upon completion. For larger projects, we 
                   can arrange a custom payment schedule.
                 </p>
               </div>
 
-              <div className="bg-[var(--color-cream)] rounded-xl p-6">
-                <h3 className="text-lg font-bold text-[var(--color-primary)] mb-2 font-[var(--font-cormorant)]">
+              <div className="bg-[var(--color-cream)] rounded-xl p-8 text-center">
+                <h3 className="text-xl font-bold text-[var(--color-primary)] mb-4 font-[var(--font-cormorant)]">
                   Will I be able to update the website myself?
                 </h3>
-                <p className="text-[var(--color-text-muted)]">
+                <p className="text-[var(--color-text-muted)] leading-relaxed max-w-xl mx-auto">
                   Absolutely! We provide training and documentation so you can 
                   make updates to your content. For more complex changes, our 
                   support team is always available to help.
                 </p>
               </div>
 
-              <div className="bg-[var(--color-cream)] rounded-xl p-6">
-                <h3 className="text-lg font-bold text-[var(--color-primary)] mb-2 font-[var(--font-cormorant)]">
+              <div className="bg-[var(--color-cream)] rounded-xl p-8 text-center">
+                <h3 className="text-xl font-bold text-[var(--color-primary)] mb-4 font-[var(--font-cormorant)]">
                   Do you work with clients outside of Denver?
                 </h3>
-                <p className="text-[var(--color-text-muted)]">
+                <p className="text-[var(--color-text-muted)] leading-relaxed max-w-xl mx-auto">
                   Yes! While we&apos;re based in Denver, we work with clients 
                   across the United States and beyond. All of our meetings can 
                   be conducted virtually.

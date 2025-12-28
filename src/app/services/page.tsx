@@ -198,26 +198,26 @@ export default function ServicesPage() {
       {/* All Websites Include */}
       <section className="section bg-white">
         <div className="container">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16 lg:mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-primary)] mb-4 font-[var(--font-cormorant)]">
               All Websites Include
             </h2>
-            <div className="gold-line mx-auto"></div>
-            <p className="mt-6 text-[var(--color-text-muted)] max-w-2xl mx-auto">
+            <div className="gold-line"></div>
+            <p className="mt-8 text-[var(--color-text-muted)] max-w-2xl mx-auto text-lg">
               Every project comes with these essential features at no extra cost
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
             {includedFeatures.map((feature, index) => (
               <div
                 key={index}
-                className="flex items-center gap-3 bg-[var(--color-cream)] p-4 rounded-lg"
+                className="flex items-center gap-4 bg-[var(--color-cream)] p-5 rounded-lg"
               >
-                <div className="w-6 h-6 rounded-full bg-[var(--color-accent)] flex items-center justify-center flex-shrink-0">
-                  <Check size={14} className="text-white" />
+                <div className="w-7 h-7 rounded-full bg-[var(--color-accent)] flex items-center justify-center flex-shrink-0">
+                  <Check size={16} className="text-white" />
                 </div>
-                <span className="text-[var(--color-text)]">{feature}</span>
+                <span className="text-[var(--color-text)] font-medium">{feature}</span>
               </div>
             ))}
           </div>
@@ -227,17 +227,17 @@ export default function ServicesPage() {
       {/* Website Addons */}
       <section className="section bg-[var(--color-cream)]">
         <div className="container">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16 lg:mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-primary)] mb-4 font-[var(--font-cormorant)]">
               Popular Website Addons
             </h2>
-            <div className="gold-line mx-auto"></div>
-            <p className="mt-6 text-[var(--color-text-muted)] max-w-2xl mx-auto">
+            <div className="gold-line"></div>
+            <p className="mt-8 text-[var(--color-text-muted)] max-w-2xl mx-auto text-lg">
               Enhance your website with powerful additional features
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {websiteAddons.map((addon, index) => (
               <div
                 key={addon.title}
@@ -254,17 +254,17 @@ export default function ServicesPage() {
       {/* Marketing Addons */}
       <section className="section bg-white">
         <div className="container">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16 lg:mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-primary)] mb-4 font-[var(--font-cormorant)]">
               Marketing Addons
             </h2>
-            <div className="gold-line mx-auto"></div>
-            <p className="mt-6 text-[var(--color-text-muted)] max-w-2xl mx-auto">
+            <div className="gold-line"></div>
+            <p className="mt-8 text-[var(--color-text-muted)] max-w-2xl mx-auto text-lg">
               Grow your online presence with our marketing services
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {marketingAddons.map((addon, index) => (
               <div
                 key={addon.title}
@@ -281,17 +281,17 @@ export default function ServicesPage() {
       {/* Monthly Addons */}
       <section className="section bg-[var(--color-cream)]">
         <div className="container">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16 lg:mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-primary)] mb-4 font-[var(--font-cormorant)]">
               Monthly Services
             </h2>
-            <div className="gold-line mx-auto"></div>
-            <p className="mt-6 text-[var(--color-text-muted)] max-w-2xl mx-auto">
+            <div className="gold-line"></div>
+            <p className="mt-8 text-[var(--color-text-muted)] max-w-2xl mx-auto text-lg">
               Keep your website secure, updated, and performing at its best
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {monthlyAddons.map((addon, index) => (
               <div
                 key={addon.title}

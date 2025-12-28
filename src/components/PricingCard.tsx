@@ -38,16 +38,16 @@ export default function PricingCard({
       )}
 
       {/* Header */}
-      <div className={`p-6 md:p-8 text-center border-b ${popular ? "border-gray-600" : "border-gray-100"}`}>
+      <div className={`p-8 md:p-10 text-center border-b ${popular ? "border-gray-600" : "border-gray-100"}`}>
         <h3
-          className={`text-2xl font-bold mb-2 font-[var(--font-cormorant)] ${
+          className={`text-2xl md:text-3xl font-bold mb-3 font-[var(--font-cormorant)] ${
             popular ? "text-white" : "text-[var(--color-primary)]"
           }`}
         >
           {name}
         </h3>
         <p
-          className={`text-sm mb-4 ${
+          className={`text-sm md:text-base mb-6 leading-relaxed ${
             popular ? "text-gray-300" : "text-[var(--color-text-muted)]"
           }`}
         >
@@ -61,18 +61,18 @@ export default function PricingCard({
       </div>
 
       {/* Features */}
-      <div className="flex-1 p-6 md:p-8">
-        <ul className="space-y-4">
+      <div className="flex-1 p-8 md:p-10">
+        <ul className="space-y-5">
           {features.map((feature, index) => (
-            <li key={index} className="flex items-start gap-3">
+            <li key={index} className="flex items-start gap-4">
               <div
-                className={`flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center mt-0.5 ${
+                className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5 ${
                   popular ? "bg-[var(--color-accent)]" : "bg-[var(--color-primary)]"
                 }`}
               >
-                <Check size={12} className="text-white" />
+                <Check size={14} className="text-white" />
               </div>
-              <span className={`text-sm leading-relaxed ${popular ? "text-gray-200" : "text-[var(--color-text-light)]"}`}>
+              <span className={`text-sm md:text-base leading-relaxed ${popular ? "text-gray-200" : "text-[var(--color-text-light)]"}`}>
                 {feature}
               </span>
             </li>
@@ -81,10 +81,10 @@ export default function PricingCard({
       </div>
 
       {/* CTA Button */}
-      <div className="p-6 md:p-8 pt-0">
+      <div className="p-8 md:p-10 pt-0">
         <Link
           href={ctaHref}
-          className={`block w-full text-center py-3 px-6 rounded-lg font-semibold transition-all duration-300 ${
+          className={`block w-full text-center py-4 px-6 rounded-lg font-semibold transition-all duration-300 ${
             popular
               ? "bg-[var(--color-accent)] text-white hover:bg-[var(--color-accent-dark)] hover:shadow-lg"
               : "bg-[var(--color-primary)] text-white hover:bg-[var(--color-primary-dark)] hover:shadow-lg"

@@ -90,28 +90,28 @@ export default function HomePage() {
       {/* Features Section */}
       <section className="section bg-[var(--color-cream)]">
         <div className="container">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 lg:mb-20">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--color-primary)] mb-4 font-[var(--font-cormorant)]">
               What We Do Best
             </h2>
-            <div className="gold-line mx-auto"></div>
-            <p className="mt-6 text-[var(--color-text-muted)] max-w-2xl mx-auto text-lg">
+            <div className="gold-line"></div>
+            <p className="mt-8 text-[var(--color-text-muted)] max-w-2xl mx-auto text-lg leading-relaxed">
               We combine creativity with technical expertise to deliver 
               exceptional digital experiences for your business.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
             {features.map((feature, index) => (
               <div
                 key={feature.title}
-                className="group bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-fade-in"
+                className="group bg-white rounded-xl p-8 lg:p-10 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-fade-in text-center"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="w-14 h-14 rounded-xl bg-[var(--color-primary)] flex items-center justify-center mb-6 group-hover:bg-[var(--color-accent)] transition-colors duration-300">
-                  <feature.icon size={28} className="text-white" />
+                <div className="w-16 h-16 rounded-xl bg-[var(--color-primary)] flex items-center justify-center mb-6 mx-auto group-hover:bg-[var(--color-accent)] transition-colors duration-300">
+                  <feature.icon size={30} className="text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-[var(--color-primary)] mb-3 font-[var(--font-cormorant)]">
+                <h3 className="text-xl font-bold text-[var(--color-primary)] mb-4 font-[var(--font-cormorant)]">
                   {feature.title}
                 </h3>
                 <p className="text-[var(--color-text-muted)] leading-relaxed">
@@ -126,19 +126,19 @@ export default function HomePage() {
       {/* Why Choose Us Section */}
       <section className="section bg-white">
         <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center max-w-6xl mx-auto">
             {/* Content */}
-            <div>
+            <div className="text-center lg:text-left">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--color-primary)] mb-6 font-[var(--font-cormorant)]">
                 Your Vision, Our Expertise
               </h2>
-              <div className="gold-line mb-6"></div>
-              <p className="text-[var(--color-text-light)] text-lg leading-relaxed mb-6">
+              <div className="gold-line lg:mx-0"></div>
+              <p className="text-[var(--color-text-light)] text-lg leading-relaxed mb-6 mt-8">
                 At Witness Web Works, we believe every business deserves a stunning 
                 online presence. We partner with you to understand your goals and 
                 create websites that not only look amazing but also drive real business results.
               </p>
-              <p className="text-[var(--color-text-light)] text-lg leading-relaxed mb-8">
+              <p className="text-[var(--color-text-light)] text-lg leading-relaxed mb-10">
                 From small businesses to growing enterprises, we provide tailored 
                 solutions that fit your budget and exceed your expectations.
               </p>
@@ -153,12 +153,16 @@ export default function HomePage() {
 
             {/* Visual Element */}
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-dark)] rounded-2xl p-8 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <div className="text-7xl md:text-8xl font-bold font-[var(--font-cormorant)] mb-4">
-                    100+
-                  </div>
-                  <p className="text-xl text-gray-300">Projects Delivered</p>
+              <div className="aspect-square bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-dark)] rounded-2xl p-10 flex items-center justify-center">
+                <div className="text-center text-white space-y-6">
+                  <p className="text-lg text-[var(--color-accent)] uppercase tracking-widest font-medium">Our Promise</p>
+                  <p className="text-2xl md:text-3xl font-bold font-[var(--font-cormorant)] leading-relaxed">
+                    Client-Centered Design,<br />Results-Driven Development
+                  </p>
+                  <div className="w-16 h-1 bg-[var(--color-accent)] mx-auto"></div>
+                  <p className="text-gray-300 text-lg leading-relaxed max-w-sm mx-auto">
+                    Every project receives our full attention, ensuring your vision becomes reality.
+                  </p>
                 </div>
               </div>
               {/* Decorative Elements */}
