@@ -1,114 +1,39 @@
 # Witness Web Works
 
-Denver Web Design & E-Commerce website built with Next.js 14, TypeScript, and Tailwind CSS.
+The official website for **Witness Web Works**, a Denver-based web design and e-commerce agency. This website serves as the company's digital presence, showcasing their services, team, and providing a platform for potential clients to learn about their offerings and get in touch.
 
-## 🚀 Features
+## 🎯 Purpose
 
-- **Modern Tech Stack**: Next.js 14 with App Router, TypeScript, Tailwind CSS
-- **Responsive Design**: Mobile-first approach, fully responsive across all devices
-- **Contact Form**: Integrated with Resend for email functionality
-- **SEO Optimized**: Proper metadata, semantic HTML, and fast loading
-- **Beautiful UI**: Custom design with Cormorant Garamond and Open Sans fonts
+Witness Web Works is a web design and e-commerce agency that helps businesses reach more clients by building beautiful, engaging websites that drive results and grow brands. This website serves multiple purposes:
 
-## 📁 Project Structure
+## 🛠️ Technologies Used
 
-```
-src/
-├── app/
-│   ├── page.tsx              # Home page
-│   ├── services/page.tsx     # Services & pricing
-│   ├── meet-the-team/page.tsx # Team page
-│   ├── contact/page.tsx      # Contact page
-│   └── api/contact/route.ts  # Contact form API
-├── components/
-│   ├── Header.tsx            # Navigation header
-│   ├── Footer.tsx            # Site footer
-│   ├── PricingCard.tsx       # Pricing plan cards
-│   ├── AddonCard.tsx         # Addon service cards
-│   └── ContactForm.tsx       # Contact form component
-└── lib/
-    └── email.ts              # Resend email configuration
-```
+This website is built with modern web technologies to ensure fast performance, excellent user experience, and maintainability:
 
-## 🛠️ Getting Started
+### Core Framework
+- **Next.js 16** - React framework with App Router for server-side rendering and optimized performance
+- **React 19** - UI library for building interactive components
+- **TypeScript** - Type-safe JavaScript for improved code quality and developer experience
 
-### Prerequisites
+### Styling
+- **Tailwind CSS 4** - Utility-first CSS framework for rapid UI development
+- **PostCSS** - CSS processing with Tailwind integration
+- **Custom Design System** - Brand-specific color palette and typography:
+  - Primary Color: Dark Teal (`#2D4A53`)
+  - Accent Color: Gold (`#C9A227`)
+  - Background: Cream (`#FAF7F2`)
+  - Typography: Cormorant Garamond (headings) and Open Sans (body)
 
-- Node.js 18+ 
-- npm or yarn
+### Features & Integrations
+- **Resend** - Email service for contact form submissions
+- **Lucide React** - Icon library for consistent iconography
+- **Vercel** - Deployment platform optimized for Next.js applications
 
-### Installation
-
-1. Install dependencies:
-```bash
-npm install
-```
-
-2. Copy the environment example file:
-```bash
-cp env.example .env.local
-```
-
-3. Add your Resend API key to `.env.local`:
-```
-RESEND_API_KEY=re_your_api_key_here
-```
-
-4. Run the development server:
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) to view the site.
-
-## 📧 Email Setup (Resend)
-
-1. Create an account at [resend.com](https://resend.com)
-2. Verify your domain (witnesswebworks.com)
-3. Generate an API key
-4. Add the API key to your environment variables
-
-The contact form sends emails to:
-- shawn@witnesswebworks.com
-- demetri@integratedimpact.co
-- demetri@witnesswebworks.com
-
-## 🚀 Deployment (Vercel)
-
-### Deploy to Vercel
-
-1. Push your code to GitHub
-2. Import the repository in [Vercel](https://vercel.com/new)
-3. Add environment variables:
-   - `RESEND_API_KEY`: Your Resend API key
-4. Deploy!
-
-### Environment Variables
-
-| Variable | Description |
-|----------|-------------|
-| `RESEND_API_KEY` | Resend API key for email functionality |
-
-## 🎨 Design System
-
-### Colors
-
-- **Primary (Dark Teal)**: `#2D4A53`
-- **Accent (Gold)**: `#C9A227`
-- **Background (Cream)**: `#FAF7F2`
-- **Text**: `#1A1A1A`
-
-### Typography
-
-- **Headings**: Cormorant Garamond (serif)
-- **Body**: Open Sans (sans-serif)
-
-## 📱 Pages
-
-- **Home** (`/`): Hero section, features, CTA
-- **Services** (`/services`): Pricing plans, addons, included features
-- **Meet the Team** (`/meet-the-team`): Company story, team members, values
-- **Contact** (`/contact`): Contact form, contact info, FAQ
+### Key Features
+- **Responsive Design**: Mobile-first approach ensuring optimal experience across all devices
+- **SEO Optimization**: Proper metadata, semantic HTML, and fast loading times
+- **Contact Form**: Integrated email functionality for client inquiries
+- **Modern UI**: Custom design with elegant typography and cohesive visual identity
 
 ## 📄 License
 
